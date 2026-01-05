@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}О нас - Flask App{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h1 class="mb-4">О нас</h1>
+        <p class="lead">Это страница "О нас" нашего Flask-приложения.</p>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Информация о проекте</h5>
+            </div>
+            <div class="card-body">
+                <p>Данное приложение создано с использованием следующих технологий:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Flask</strong> - веб-фреймворк для Python
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Bootstrap 5</strong> - CSS-фреймворк для стилизации
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Jinja2</strong> - шаблонизатор для создания динамических страниц
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Примечание</h4>
+            <p>Это простое демонстрационное приложение, созданное для изучения основ работы с Flask, Bootstrap и Jinja2.</p>
+        </div>
+
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">Вернуться на главную</a>
+    </div>
+</div>
+{% endblock %}
+
